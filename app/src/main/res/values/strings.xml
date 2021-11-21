@@ -8,4 +8,5 @@
     <string name="FullName">Full Name</string>
     <string name="Password">Password</string>
     <string name="Select01">Select your main divice</string>
+    <string name="GetStarted">Get Started</string>
 </resources>

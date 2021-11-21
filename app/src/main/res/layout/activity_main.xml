@@ -98,18 +98,19 @@
         app:layout_constraintGuide_begin="411dp" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/rbAndroid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:drawableEnd="@drawable/ic_mobile_android"
         tools:layout_editor_absoluteX="135dp"
         tools:layout_editor_absoluteY="348dp" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/rbLaptop"
+        android:drawableEnd="@drawable/ic_laptop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteX="52dp"
         tools:layout_editor_absoluteY="348dp" />
 
     <RadioButton
@@ -120,18 +121,59 @@
         tools:layout_editor_absoluteY="348dp" />
 
     <RadioButton
-        android:id="@+id/radioButton4"
+        android:id="@+id/pc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_desktop"
         tools:layout_editor_absoluteX="244dp"
         tools:layout_editor_absoluteY="348dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvDivice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Select01"
         tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="298dp" />
+
+    <TextView
+        android:id="@+id/tvWellcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GetStarted"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="501dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
