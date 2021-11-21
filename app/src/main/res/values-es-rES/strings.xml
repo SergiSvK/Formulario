@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="Exit">Volver</string>
+    <string name="Email">Correo</string>
+    <string name="Terms">Acepto las condiciones de servicio y la privacidad</string>
+    <string name="SignIn">Registrarse</string>
+    <string name="Nickname">Nombre de Usuario</string>
+    <string name="FullName">Nombre Completo</string>
+</resources>

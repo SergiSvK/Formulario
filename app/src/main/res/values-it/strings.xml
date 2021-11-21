@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Modulo</string>
+    <string name="Exit">Indietro</string>
+    <string name="SignIn">Accedi</string>
+    <string name="Email">Correo</string>
+    <string name="Terms">Accetto i Termini di Servizio e la Privacy</string>
+    <string name="Nickname">Nome utente</string>
+    <string name="FullName">Nome e cognome</string>
+</resources>
