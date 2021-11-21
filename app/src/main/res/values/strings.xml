@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">from</string>
+    <string name="Exit" translatable="false">Exit</string>
+    <string name="SignIn" translatable="false">Sign In</string>
+    <string name="Email">Email</string>
+    <string name="Name">Name</string>
+</resources>
