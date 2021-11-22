@@ -7,4 +7,8 @@
     <string name="SignIn">Registrarse</string>
     <string name="Nickname">Nombre de Usuario</string>
     <string name="FullName">Nombre Completo</string>
+    <string name="Password">Contraseña</string>
+    <string name="GetStarted">Inicio</string>
+    <string name="Select01">Seleccione su aparato principal</string>
+    <string name="Website">¿Qué tipo de sitio web necesita?</string>
 </resources>

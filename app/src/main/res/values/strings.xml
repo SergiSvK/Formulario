@@ -7,6 +7,7 @@
     <string name="Nickname">User Name</string>
     <string name="FullName">Full Name</string>
     <string name="Password">Password</string>
-    <string name="Select01">Select your main divice</string>
+    <string name="Select01">Select your main device</string>
     <string name="GetStarted">Get Started</string>
+    <string name="Website">What the of website do you need?</string>
 </resources>

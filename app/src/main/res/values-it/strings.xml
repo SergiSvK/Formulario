@@ -7,4 +7,9 @@
     <string name="Terms">Accetto i Termini di Servizio e la Privacy</string>
     <string name="Nickname">Nome utente</string>
     <string name="FullName">Nome e cognome</string>
+    <string name="Password">Password</string>
+    <string name="Select01">Seleziona il tuo divice principale</string>
+    <string name="Select01">Seleziona il tuo divice principale</string>
+    <string name="GetStarted">Iniziare</string>
+    <string name="Website">Di che tipo di sito web hai bisogno?</string>
 </resources>
