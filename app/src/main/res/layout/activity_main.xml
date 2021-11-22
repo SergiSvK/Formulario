@@ -88,41 +88,59 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etNick"
-        android:layout_width="130dp"
-        android:layout_height="40dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
         android:ems="10"
+        android:hint="@string/Nickname"
         android:inputType="textPersonName"
-        android:text="@string/Nickname"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperText="@string/Required"
+        app:helperTextTextColor="@color/light_grey"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="@+id/etPassword"
-        tools:layout_editor_absoluteY="213dp" />
+        tools:layout_editor_absoluteY="213dp">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNickInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etFullName"
-        android:layout_width="120dp"
-        android:layout_height="44dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="122dp"
+        android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/FullName"
+        android:hint="@string/FullName"
         app:layout_constraintBottom_toBottomOf="@+id/etNick"
         app:layout_constraintEnd_toEndOf="@+id/etPassword"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/etNick" />
+        app:layout_constraintTop_toTopOf="@+id/etNick">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFullNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
         android:id="@+id/terms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="28dp"
         android:text="@string/Terms"
+        android:textColor="@color/grey"
         app:layout_constraintBottom_toTopOf="@+id/bExit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -144,7 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:drawableEnd="@drawable/ic_mobile_android"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/tvDevice"
         tools:ignore="DuplicateSpeakableTextCheck" />
@@ -156,30 +174,31 @@
         android:drawableEnd="@drawable/ic_laptop"
         app:layout_constraintBottom_toBottomOf="@+id/rbAndroid"
         app:layout_constraintEnd_toStartOf="@+id/rbAndroid"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rbAndroid" />
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/tvDevice"
+        app:layout_constraintTop_toTopOf="@+id/rbAndroid"
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioButton
         android:id="@+id/radioButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
         android:drawableEnd="@drawable/ic_tablet"
         app:layout_constraintBottom_toBottomOf="@+id/pc"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pc"
         app:layout_constraintTop_toTopOf="@+id/pc" />
 
     <RadioButton
         android:id="@+id/pc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:drawableEnd="@drawable/ic_desktop"
         app:layout_constraintBottom_toBottomOf="@+id/rbAndroid"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/rbAndroid" />
+        app:layout_constraintTop_toTopOf="@+id/rbAndroid"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tvDevice"
@@ -188,7 +207,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="4dp"
         android:text="@string/Select01"
-        android:textColor="@color/black"
+        android:textColor="@color/grey"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/etNick"
         app:layout_constraintTop_toBottomOf="@+id/etNick" />
@@ -214,12 +233,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="52dp"
         android:text="@string/Website"
-        android:textColor="@color/black"
+        android:textColor="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rbLaptop"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <CheckBox
@@ -230,10 +249,10 @@
         android:drawableEnd="@drawable/ic_bug"
         app:layout_constraintBottom_toTopOf="@+id/terms"
         app:layout_constraintEnd_toStartOf="@+id/cbPrgraming"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.116" />
+        app:layout_constraintVertical_bias="0.111" />
 
     <CheckBox
         android:id="@+id/cbPrgraming"
@@ -252,12 +271,13 @@
         android:id="@+id/cbServer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
         android:drawableEnd="@drawable/ic_server_connection"
         app:layout_constraintBottom_toBottomOf="@+id/cbPrgraming"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/cbPrgraming"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/cbPrgraming"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
