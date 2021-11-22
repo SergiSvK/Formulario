@@ -10,4 +10,5 @@
     <string name="Select01">Select your main device</string>
     <string name="GetStarted">Get Started</string>
     <string name="Website">What the of website do you need?</string>
+    <string name="Required">* Required</string>
 </resources>

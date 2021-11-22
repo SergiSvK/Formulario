@@ -11,4 +11,5 @@
     <string name="GetStarted">Inicio</string>
     <string name="Select01">Seleccione su aparato principal</string>
     <string name="Website">¿Qué tipo de sitio web necesita?</string>
+    <string name="Required">* Requerido</string>
 </resources>
